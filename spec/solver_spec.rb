@@ -37,4 +37,14 @@ RSpec.describe Solver do
       end
     end
   end
+
+  describe '#fizzbuzz' do
+    context 'when the input is divisible by 3' do
+      subject { described_class.new(9, 'hello') }
+
+      it 'returns fizz' do
+        expect(subject.fizzbuzz).to eql('fizz')
+      end
+    end
+  end
 end
