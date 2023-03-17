@@ -4,7 +4,7 @@ require_relative '../solver'
 RSpec.describe Solver do
   describe '#factorial' do
     context 'when the input is 10' do
-      subject { described_class.new(N: 10) }
+      subject { described_class.new(n: 10) }
 
       it 'returns 3628800' do
         subject.factorial
