@@ -27,6 +27,8 @@ class Solver
       'fizz'
     elsif @number.modulo(5).zero?
       'buzz'
+    else
+      "#{@number}"
     end
   end
 end
