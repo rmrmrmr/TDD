@@ -54,5 +54,13 @@ RSpec.describe Solver do
         expect(subject.fizzbuzz).to eql('buzz')
       end
     end
+
+    context 'when the input is divisible both by 3 and 5' do
+      subject { described_class.new(15, 'hello') }
+
+      it 'returns fizzbuzz' do
+        expect(subject.fizzbuzz).to eql('fizzbuzz')
+      end
+    end
   end
 end
