@@ -30,11 +30,11 @@ RSpec.describe Solver do
 
   describe '#reverse' do
     context "when the input is 'hello'" do
-      subject { described_class.new(word = 'hello') }
+      subject { described_class.new(10, 'hello') }
 
       it 'returs olleh' do
         expect(subject.reverse).to eql('olleh')
+      end
     end
   end
-end
 end
