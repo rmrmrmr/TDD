@@ -23,6 +23,8 @@ class Solver
   def fizzbuzz
     if @number.modulo(3) == 0
       'fizz'
+    elsif @number.modulo(5) == 0
+      'buzz'
     end
   end
 end
