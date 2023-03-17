@@ -19,4 +19,10 @@ class Solver
     any_arr.reverse!
     any_arr.join
   end
+
+  def fizzbuzz
+    if @number.modulo(3) == 0
+      'fizz'
+    end
+  end
 end
