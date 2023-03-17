@@ -21,9 +21,11 @@ class Solver
   end
 
   def fizzbuzz
-    if @number.modulo(3) == 0
+    if @number.modulo(3).zero? and @number.modulo(5).zero?
+      'fizzbuzz'
+    elsif @number.modulo(3).zero?
       'fizz'
-    elsif @number.modulo(5) == 0
+    elsif @number.modulo(5).zero?
       'buzz'
     end
   end
