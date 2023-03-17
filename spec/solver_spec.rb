@@ -7,7 +7,7 @@ RSpec.describe Solver do
       subject { described_class.new(10) }
 
       it 'returns 3628800' do
-        expect(subject.factorial).to eql(3628800)
+        expect(subject.factorial).to eql(3_628_800)
       end
     end
 
@@ -17,7 +17,7 @@ RSpec.describe Solver do
       it 'returns 1' do
         expect(subject.factorial).to eql(1)
       end
-    end 
+    end
 
     context 'when the input is a negative integer' do
       subject { described_class.new(-10) }

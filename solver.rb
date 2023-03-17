@@ -1,16 +1,15 @@
 class Solver
-  def initialize(n)
-    @n = n
+  def initialize(number)
+    @number = number
   end
 
   def factorial
-    result = if @n == 0
+    if @number.zero?
       1
-    elsif @n < 0
+    elsif @nnumber.negative?
       'Please enter a positive integer'
     else
-      @n * Solver.new(@n-1).factorial
+      @number * Solver.new(@number - 1).factorial
     end
-    return result
   end
 end
