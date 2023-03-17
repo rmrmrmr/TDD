@@ -28,7 +28,7 @@ class Solver
     elsif @number.modulo(5).zero?
       'buzz'
     else
-      "#{@number}"
+      @number.to_s
     end
   end
 end
